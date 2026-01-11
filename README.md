@@ -455,10 +455,19 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 ## 👤 Geliştirici
 
 **Zeynep İbiş**
-
+- Tarih: 11 Ocak 2025
+- Amaç: Aktüeryal hesaplamalar için Türkçe Python kütüphanesi
 - GitHub: [zzeynepibis](https://github.com/zzeynepibis)
 - Email: zzeynepibis@gmail.com
 
+
+---
+
+## 📚 Ders Materyalleri ve Eğitimciler
+
+- Demet Sezer - Finans Matematiği Öğretmeni 
+- Zehra Başkaya - Finans Matematiği Ders Notları
+- Emine Ebru Akaoy - Aktüerya Matematiği Ders Notları
 
 ---
 
