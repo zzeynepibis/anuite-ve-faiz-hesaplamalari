@@ -169,4 +169,4 @@ def sure_hesapla_bd(bugunku_deger, taksit, i, c, tahmin=5, tolerans=1e-6, maks_i
         
         n = n_yeni
     
-    raise ValueError(f"Yakınsama sağlanamadı ({maks_iterasyon) iterasyonda).")
+    raise ValueError(f"Yakınsama sağlanamadı ({maks_iterasyon} iterasyonda).")
