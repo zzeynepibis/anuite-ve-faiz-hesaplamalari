@@ -526,4 +526,4 @@ Bu projeyi beğendiyseniz lütfen ⭐ vererek destek olun!
 
 ---
 
-**Not:** Bu kütüphane eğitim amaçlıdır. Gerçek finansal kararlar almadan önce bir finans uzmanına danışın.
+**Not:** Bu kütüphane eğitim amaçlıdır. Gerçek finansal kararlar almadan önce bir finans uzmanına danışın."# anuite-ve-faiz-hesaplamalari"  
