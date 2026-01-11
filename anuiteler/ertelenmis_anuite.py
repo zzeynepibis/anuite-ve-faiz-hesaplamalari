@@ -133,7 +133,7 @@ def taksit_hesapla_bd_devre_basi(bugunku_deger, i, n, m):
 # ÇABUKLAŞTIRILMIŞ ERTELENMİŞ ANÜİTE
 # ============================================================================
 
-def bugunku_deger_cabuklas_ertekenmis(taksit, i, n, m, c):
+def bugunku_deger_cabuklas_ertelenmis(taksit, i, n, m, c):
     if i <= 0:
         raise ValueError("Faiz oranı sıfırdan büyük olmalıdır.")
     if n <= 0:
