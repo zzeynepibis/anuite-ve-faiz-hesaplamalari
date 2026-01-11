@@ -172,7 +172,7 @@ def test_surekli():
     print(f"{m} dönem ertelenmiş sürekli anüite BD: {bd_ertelenme:.2f} TL")
 
 
-def test_ertekenmis():
+def test_ertelenmis():
     """Ertelenmiş anüite testleri (YENİ!)"""
     print("\n" + "="*60)
     print("ERTELENMİŞ ANÜİTE TESTLERİ")
@@ -395,7 +395,7 @@ def test_ters_kontrol():
         ("Devre Başı BD Formülleri", lambda: test_db_bd_ters()),
         ("Devre Başı GD Formülleri", lambda: test_db_gd_ters()),
         ("Sürekli Anüite", lambda: test_surekli_ters()),
-        ("Ertelenmiş Anüite", lambda: test_ertekenmis_ters()),
+        ("Ertelenmiş Anüite", lambda: test_ertelenmis_ters()),
         ("Geometrik Anüite", lambda: test_geometrik_ters()),
         ("Aritmetik Anüite", lambda: test_aritmetik_ters()),
         ("Çabuklaştırılmış Anüite", lambda: test_cabuklas_ters()),
@@ -467,7 +467,7 @@ def test_surekli_ters():
     assert abs(odeme - odeme_ters) < 0.01
 
 
-def test_ertekenmis_ters():
+def test_ertelenmis_ters():
     taksit = 10000
     i = 0.30
     n = 8
@@ -548,7 +548,7 @@ if __name__ == "__main__":
     test_devre_sonu()
     test_devre_basi()
     test_surekli()
-    test_ertekenmis()      # YENİ!
+    test_ertelenmis()      # YENİ!
     test_geometrik()       # YENİ!
     test_aritmetik()       # YENİ!
     test_cabuklas()        # YENİ!
