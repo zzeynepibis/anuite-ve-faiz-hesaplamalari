@@ -8,7 +8,7 @@ Modüller:
 - devre_sonu_anuite: Devre sonu ödemeli anüiteler  
 - devre_basi_anuite: Devre başı ödemeli anüiteler
 - surekli_anuite: Sürekli (perpetuity) anüiteler
-- ertekenmis_anuite: Ertelenmiş (geciktirilmiş) anüiteler
+- ertelenmis_anuite: Ertelenmiş (geciktirilmiş) anüiteler
 - geometrik_anuite: Geometrik dizi şeklinde değişen taksitler
 - aritmetik_anuite: Aritmetik dizi şeklinde değişen taksitler
 - cabuklas_anuite: Çabuklaştırılmış anüiteler
@@ -107,10 +107,10 @@ from .surekli_anuite import (
 # ============================================================
 # ERTELENMİŞ ANÜİTE MODÜLÜ (YENİ!)
 # ============================================================
-from . import ertekenmis_anuite
+from . import ertelenmis_anuite
 
 # Ertelenmiş anüite - Devre Sonu
-from .ertekenmis_anuite import (
+from .ertelenmis_anuite import (
     bugunku_deger_devre_sonu as ert_ds_bd,
     gelecek_deger_devre_sonu as ert_ds_gd,
     taksit_hesapla_bd_devre_sonu as ert_ds_taksit_bd,
@@ -118,21 +118,21 @@ from .ertekenmis_anuite import (
 )
 
 # Ertelenmiş anüite - Devre Başı
-from .ertekenmis_anuite import (
+from .ertelenmis_anuite import (
     bugunku_deger_devre_basi as ert_db_bd,
     gelecek_deger_devre_basi as ert_db_gd,
     taksit_hesapla_bd_devre_basi as ert_db_taksit_bd,
 )
 
 # Ertelenmiş anüite - Ters Formüller
-from .ertekenmis_anuite import (
+from .ertelenmis_anuite import (
     gecikme_suresi_hesapla_bd as ert_gecikme_hesapla,
     faiz_orani_hesapla_bd as ert_faiz_hesapla,
     sure_hesapla_bd as ert_sure_hesapla,
 )
 
 # Çabuklaştırılmış Ertelenmiş
-from .ertekenmis_anuite import (
+from .ertelenmis_anuite import (
     bugunku_deger_cabuklas_ertekenmis as ert_cabuklas_bd,
 )
 
@@ -244,21 +244,6 @@ from .yardimci import (
 # ============================================================
 
 def anuite_hesapla(odeme=None, bugunku_deger=None, gelecek_deger=None, n=None, i=None, tip='devre_sonu'):
-    """
-    Hızlı anüite hesaplama - 4 bilinmeyenli formül
-    Herhangi 3 değer verildiğinde 4.cüyü hesaplar
-    
-    Args:
-        odeme: Dönemsel ödeme tutarı
-        bugunku_deger: Bugünkü değer
-        gelecek_deger: Gelecek değer
-        n: Dönem sayısı
-        i: Faiz oranı
-        tip: 'devre_sonu' veya 'devre_basi'
-    
-    Returns:
-        dict: Hesaplanan değerler
-    """
     import warnings
     
     # Kaç değer verilmiş?
@@ -311,7 +296,7 @@ __all__ = [
     'devre_sonu_anuite',
     'devre_basi_anuite',
     'surekli_anuite',
-    'ertekenmis_anuite',
+    'ertelenmis_anuite',
     'geometrik_anuite',
     'aritmetik_anuite',
     'cabuklas_anuite',
